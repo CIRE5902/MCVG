@@ -126,7 +126,7 @@ main{padding:4rem 1rem}
 
 /* Responsive: menú colapsable en < 900px */
 @media (max-width: 900px){
-  nav{ position:fixed; inset:64px 0 auto 0; background:rgba(255,255,255,.98); border-bottom:1px solid rgba(0,0,0,.06); transform:translateY(-120%); transition:transform .25s ease; }
+  nav{ position:fixed; inset:64px 0 auto 0; background:rgba(255,255,255,.98); border-bottom:1px solid rgba(0,0,0,.06); transform:translateY(-150%); transition:transform .25s ease; }
   nav ul{ flex-direction:column; padding:1rem 1.25rem; gap:.8rem }
   .nav-open nav{ transform:translateY(0) }
   .nav-toggle{ display:inline-grid; place-items:center }

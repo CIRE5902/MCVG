@@ -1,37 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MCVG</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Despacho — Abogada</title>
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
+  <!-- Header fijo -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <a class="brand" href="#">
+        <span class="mark" aria-hidden="true">VG</span>
+        <span>Mari Vera</span>
+      </a>
 
-  <header id="header">
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Abrir menú">
+        ☰ Menú
+      </button>
 
-    <nav>
-      <img src="" alt="logo">
-      <input type="checkbox" id="menu" />
-      <label for="menu">
-        <img src="" class="menu-icono" alt="menu">
-      </label>
+      <nav id="siteNav" aria-label="Principal">
+        <ul>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#honorarios">Honorarios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
 
-      <ul class="menu">
-        <li class="item">Inicio</li>
-        <li class="item">Servicios</li>
-        <li class="item">Sobre mi</li>
-        <li class="item">Contacto</li>
-      </ul>
-    </nav>
+      <a class="cta desktop-only" href="#contacto">Pedir cita</a>
+    </div>
   </header>
 
-  <div>
+  <!-- Hero 100vh -->
+  <section class="hero" role="banner" aria-label="Portada del despacho">
+    <div class="hero-inner">
+      <span class="eyebrow">Derecho civil & familia</span>
+      <h1>Defensa clara, resolución eficaz.</h1>
+      <p>Asesoramiento legal honesto y cercano. Más de 15 años ayudando a personas y empresas.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#contacto">Agendar consulta</a>
+        <a class="btn" href="#servicios">Ver servicios</a>
+      </div>
+    </div>
+  </section>
 
-  </div>
-  <script src="js/script.js"></script>
+  <main>
+    <section id="servicios" class="section">
+      <h2>Servicios</h2>
+      <p>…</p>
+    </section>
+    <section id="sobre-mi" class="section">
+      <h2>Sobre mí</h2>
+      <p>…</p>
+    </section>
+    <section id="honorarios" class="section">
+      <h2>Honorarios</h2>
+      <p>…</p>
+    </section>
+    <section id="contacto" class="section">
+      <h2>Contacto</h2>
+      <p>…</p>
+    </section>
+  </main>
+
+  <!-- JS externo -->
+  <script src="js/script.js" defer></script>
 </body>
-
 </html>

@@ -202,7 +202,7 @@ main {
 .section {
   width: min(1100px, 100%);
   margin-inline: auto;
-  padding: 3rem 3rem;
+  padding: 5rem 3rem;
 }
 
 /* Responsive: menú colapsable en < 900px */

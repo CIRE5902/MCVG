@@ -17,9 +17,9 @@
         <span>Mari Vera</span>
       </a>
 
-      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Abrir menú">
-        ☰ Menú
-      </button>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Abrir menú">☰
+        Menú</button>
+
 
       <nav id="siteNav" aria-label="Principal">
         <ul>
@@ -35,8 +35,9 @@
   </header>
 
   <div class="boton-whats">
-    <a href="https://wa.me/34611172625" class="whatsapp-float" target="_blank">
-      <img src="images/whatsapp.png" alt="whatsapp" srcset="">
+    <a class="whatsapp-float" href="https://wa.me/34611172625" target="_blank" rel="noopener noreferrer"
+      aria-label="Abrir WhatsApp">
+      <img src="images/whatsapp.png" alt="" aria-hidden="true">
     </a>
   </div>
 
@@ -186,9 +187,96 @@
       <h2>Testimonios</h2>
       <p>…</p>
     </section>
-    <section id="contacto" class="section">
+    <section class="section">
+    </section>
+    <section id="contacto" class="section contacto">
       <h2>Contacto</h2>
-      <p>…</p>
+      <div class="contacto-links">
+        <div class="contact-card">
+          <div class="contact-card__icon">📍</div>
+          <h3 class="contact-card__title">Ubicación</h3>
+          <p>Carrer de Sant Marian, 75<br>Terrassa - Barcelona</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card__icon">🕒</div>
+          <h3 class="contact-card__title">Office Hour</h3>
+          <p>Mon - Sat: 8am - 4pm<br>Sunday: Closed</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card__icon">📧</div>
+          <h3 class="contact-card__title">Email Support</h3>
+          <p>support@yourmail.tld<br>hello@yourmail.tld</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card__icon">📞</div>
+          <h3 class="contact-card__title">Let's Talk</h3>
+          <p>+62 21 2002 2012<br>+62 21 2002 2013</p>
+        </div>
+      </div>
+      <!-- <div>
+        Quieres resolver todos tus problemas?
+      </div> -->
+      <div>
+        <section class="contact-wrap">
+          <!-- Left: Map -->
+          <div class="contact-map" aria-label="Map">
+            <!-- Sustituye el src por tu iframe de Google Maps/Leaflet -->
+            <iframe title="Ubicación del despacho" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2985.482255959681!2d2.0124274764465144!3d41.55880618534442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a492e92a568dd5%3A0xb52bbd5f96865fd4!2sCarrer%20de%20Sant%20Marian%2C%2075%2C%2008221%20Terrassa%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1759770227579!5m2!1ses!2ses"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <!-- Right: Form -->
+          <div class="contact-panel">
+            <h2>Send us a message</h2>
+
+            <form class="contact-form" action="#" method="post" novalidate>
+              <!-- Row: Name / Phone -->
+              <div class="row">
+                <label class="field">
+                  <span>Name</span>
+                  <input type="text" name="name" placeholder="Name" required autocomplete="name" />
+                </label>
+
+                <label class="field">
+                  <span>Phone</span>
+                  <input type="tel" name="phone" placeholder="Phone" autocomplete="tel" />
+                </label>
+              </div>
+
+              <!-- Row: Email / Company -->
+              <div class="row">
+                <label class="field">
+                  <span>Email</span>
+                  <input type="email" name="email" placeholder="Email" required autocomplete="email"
+                    inputmode="email" />
+                </label>
+
+                <label class="field">
+                  <span>Company</span>
+                  <input type="text" name="company" placeholder="Name" autocomplete="organization" />
+                </label>
+              </div>
+
+              <!-- Subject -->
+              <label class="field">
+                <span>Subject</span>
+                <input type="text" name="subject" placeholder="Subject" />
+              </label>
+
+              <!-- Message -->
+              <label class="field">
+                <span>Message</span>
+                <textarea name="message" rows="5" placeholder="Message"></textarea>
+              </label>
+
+              <button class="send-btn" type="submit">Send</button>
+            </form>
+          </div>
+      </div>
     </section>
   </main>
 

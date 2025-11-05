@@ -26,11 +26,11 @@
           <li><a href="#servicios">Servicios</a></li>
           <li><a href="#sobre-mi">Sobre mí</a></li>
           <li><a href="#testimonios">Testimonios</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#contact">Contacto</a></li>
         </ul>
       </nav>
 
-      <a class="cta desktop-only" href="#contacto">Pedir cita</a>
+      <a class="cta desktop-only" href="#contact">Pedir cita</a>
     </div>
   </header>
 
@@ -47,7 +47,7 @@
       <h1>Defensa clara, resolución eficaz.</h1>
       <p>Asesoramiento legal honesto y cercano. Más de 15 años ayudando a personas y empresas.</p>
       <div class="hero-actions">
-        <a class="btn primary" href="#contacto">Agendar consulta</a>
+        <a class="btn primary" href="#contact">Agendar consulta</a>
         <a class="btn" href="#servicios">Ver servicios</a>
       </div>
     </div>
@@ -84,7 +84,7 @@
         </div>
 
         <div class="casos__cta">
-          <a href="#contacto" class="btn">Cuéntame tu caso</a>
+          <a href="#contact" class="btn">Cuéntame tu caso</a>
         </div>
       </div>
     </section>
@@ -187,96 +187,125 @@
       <h2>Testimonios</h2>
       <p>…</p>
     </section>
-    <section class="section">
-    </section>
-    <section id="contacto" class="section contacto">
-      <h2>Contacto</h2>
-      <div class="contacto-links">
-        <div class="contact-card">
-          <div class="contact-card__icon">📍</div>
-          <h3 class="contact-card__title">Ubicación</h3>
-          <p>Carrer de Sant Marian, 75<br>Terrassa - Barcelona</p>
-        </div>
-
-        <div class="contact-card">
-          <div class="contact-card__icon">🕒</div>
-          <h3 class="contact-card__title">Office Hour</h3>
-          <p>Mon - Sat: 8am - 4pm<br>Sunday: Closed</p>
-        </div>
-
-        <div class="contact-card">
-          <div class="contact-card__icon">📧</div>
-          <h3 class="contact-card__title">Email Support</h3>
-          <p>support@yourmail.tld<br>hello@yourmail.tld</p>
-        </div>
-
-        <div class="contact-card">
-          <div class="contact-card__icon">📞</div>
-          <h3 class="contact-card__title">Let's Talk</h3>
-          <p>+62 21 2002 2012<br>+62 21 2002 2013</p>
-        </div>
-      </div>
-      <!-- <div>
-        Quieres resolver todos tus problemas?
-      </div> -->
+    <section id="contact" class="section contact-section">
       <div>
-        <section class="contact-wrap">
-          <!-- Left: Map -->
-          <div class="contact-map" aria-label="Map">
-            <!-- Sustituye el src por tu iframe de Google Maps/Leaflet -->
-            <iframe title="Ubicación del despacho" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2985.482255959681!2d2.0124274764465144!3d41.55880618534442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a492e92a568dd5%3A0xb52bbd5f96865fd4!2sCarrer%20de%20Sant%20Marian%2C%2075%2C%2008221%20Terrassa%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1759770227579!5m2!1ses!2ses"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
+        <div>
+          <h2 class="titleContact">CONTACTAME</h2>
+        </div>
 
-          <!-- Right: Form -->
-          <div class="contact-panel">
-            <h2>Send us a message</h2>
+        <div class="contact__grid">
+          <!-- Formulario -->
+          <article class="contact__panel contact__form" aria-labelledby="form-title">
+            <h3 id="form-title" class="contact__subtitle">Envíame un mensaje</h3>
 
-            <form class="contact-form" action="#" method="post" novalidate>
-              <!-- Row: Name / Phone -->
+            <form name="contacto-abogada" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="contacto-abogada" />
+              <p class="sr-only">
+                <label>Si ves este campo, no lo rellenes <input name="bot-field" /></label>
+              </p>
+
               <div class="row">
-                <label class="field">
-                  <span>Name</span>
-                  <input type="text" name="name" placeholder="Name" required autocomplete="name" />
-                </label>
-
-                <label class="field">
-                  <span>Phone</span>
-                  <input type="tel" name="phone" placeholder="Phone" autocomplete="tel" />
-                </label>
+                <div class="field">
+                  <label for="nombre">Nombre y apellidos</label>
+                  <input id="nombre" name="nombre" type="text" autocomplete="name" placeholder="Ej. María García"
+                    required />
+                </div>
+                <div class="field">
+                  <label for="telefono">Teléfono <span class="muted">(opcional)</span></label>
+                  <input id="telefono" name="telefono" type="tel" autocomplete="tel" placeholder="Ej. 600 123 456" />
+                </div>
               </div>
 
-              <!-- Row: Email / Company -->
               <div class="row">
-                <label class="field">
-                  <span>Email</span>
-                  <input type="email" name="email" placeholder="Email" required autocomplete="email"
-                    inputmode="email" />
-                </label>
-
-                <label class="field">
-                  <span>Company</span>
-                  <input type="text" name="company" placeholder="Name" autocomplete="organization" />
-                </label>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" autocomplete="email" placeholder="tucorreo@dominio.com"
+                    required />
+                </div>
+                <div class="field">
+                  <label for="asunto">Asunto</label>
+                  <input id="asunto" name="asunto" type="text" placeholder="Ej. Consulta sobre divorcio" required />
+                </div>
               </div>
 
-              <!-- Subject -->
-              <label class="field">
-                <span>Subject</span>
-                <input type="text" name="subject" placeholder="Subject" />
-              </label>
+              <div class="row">
+                <div class="field field--full">
+                  <label for="mensaje">Mensaje</label>
+                  <textarea id="mensaje" name="mensaje"
+                    placeholder="Cuéntame brevemente tu caso, fechas clave y objetivo." rows="6"></textarea>
+                  <p class="help">Trato confidencial. No se crea relación abogado-cliente hasta aceptación expresa.</p>
+                </div>
+              </div>
 
-              <!-- Message -->
-              <label class="field">
-                <span>Message</span>
-                <textarea name="message" rows="5" placeholder="Message"></textarea>
-              </label>
-
-              <button class="send-btn" type="submit">Send</button>
+              <div class="actions">
+                <label class="consent">
+                  <input type="checkbox" name="rgpd" required />
+                  <span>Acepto el <a href="#" class="link">aviso legal</a> y la <a href="#" class="link">política de
+                      privacidad</a>.</span>
+                </label>
+                <button type="submit" class="btn btn-contact">Enviar consulta</button>
+              </div>
             </form>
-          </div>
+          </article>
+
+          <!-- Métodos de contacto -->
+          <aside class="contact__panel contact__info" aria-labelledby="info-title">
+            <h3 id="info-title" class="contact__subtitle">Otros métodos de contacto</h3>
+
+            <div class="info-card">
+              <div class="item">
+                <div class="icon" aria-hidden="true">📞</div>
+                <div>
+                  <strong>Teléfono</strong>
+                  <div class="muted">L-V · 9:30–14:00 / 16:00–19:00</div>
+                  <div>+34 600 000 000</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="item">
+                <div class="icon" aria-hidden="true">✉️</div>
+                <div>
+                  <strong>Email</strong>
+                  <div><a class="chip" href="mailto:despacho@tudominio.com">despacho@tudominio.com</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="item">
+                <div class="icon" aria-hidden="true">📍</div>
+                <div>
+                  <strong>Despacho</strong>
+                  <div>Av. Principal, 123 · 1ºB · 08213 Polinyà (Barcelona)</div>
+                  <div class="muted">Cita previa requerida</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="item">
+                <div class="icon" aria-hidden="true">🟢</div>
+                <div>
+                  <strong>WhatsApp</strong>
+                  <div><a class="chip chip--wa" href="https://wa.me/34600000000" target="_blank"
+                      rel="noopener">Escríbeme por WhatsApp</a></div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <!-- Mapa -->
+        <div class="contact__map">
+          <h3 class="contact__subtitle">Dónde estamos</h3>
+          <iframe class="map" loading="lazy" allowfullscreen
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2991.839365982997!2d2.176!3d41.488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDEuNDg4LCDCsDIuMTc2!5e0!3m2!1ses!2ses!4v0000000000000">
+          </iframe>
+        </div>
       </div>
+
     </section>
   </main>
 
